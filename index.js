@@ -48,14 +48,17 @@ async function main() {
             console.log(`New driver created with result: ${result}`);
         });
 
-        const availableDrivers = await db.collection('drivers').find({
-            isAvailable: true,
-            rating: { $gte: 4.5 }
-        }).toArray();
-        console.log("Available drivers:",availableDrivers);
+        const updateResult = await db.collection('drivers').updateOne(
+            { name: "Razin" },
+            { $inc: { rating: 0.1 } }
+        );
+        console.log(`Driver updated with results: ${updateResult}`);
 
+        const deleteResult = await db.collection('drivers').deleteOne({ isAvailable: false });
+        console.log(`Driver deleted with result: ${deleteResult}`);
+        
     } finally {
-        //await client.close();
+        await client.close();
     }
 }
 
