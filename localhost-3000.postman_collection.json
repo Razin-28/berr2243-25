@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "0943accd-145a-4225-8091-8621a0e5e970",
+		"name": "localhost:3000",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49115253",
+		"_collection_link": "https://b122310422-7074046.postman.co/workspace/b122310422's-Workspace~ef227374-57d5-4f31-8b8c-95b8ef41da16/collection/49115253-0943accd-145a-4225-8091-8621a0e5e970?action=share&source=collection_link&creator=49115253"
+	},
+	"item": [
+		{
+			"name": "/rides/6902e2565aae82bd7331495d",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"cancelled\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rides/6902e2565aae82bd7331495d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rides",
+						"6902e2565aae82bd7331495d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/rides/6902e2565aae82bd7331495d",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"cancelled\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rides/6902e2565aae82bd7331495d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rides",
+						"6902e2565aae82bd7331495d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/rides",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pickupLocation\": \"Central Park\",\r\n    \"destination\": \"Times Square\",\r\n    \"drverID\": \"DRIVER123\",\r\n    \"status\": \"requested\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rides",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rides"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/rides",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pickupLocation\": \"Central Park\",\r\n    \"destination\": \"Times Square\",\r\n    \"drverID\": \"DRIVER123\",\r\n    \"status\": \"requested\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rides",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rides"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
